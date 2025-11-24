@@ -5,11 +5,17 @@ interface INavbarProps {
   children: ReactNode;
 }
 
+type TMenuItem = {
+  id: number;
+  title: string;
+  path: TNavItemIDTypes;
+};
+
 const Navbar = (props: INavbarProps) => {
-  const menuItems = [
+  const menuItems: TMenuItem[] = [
     { id: 1, title: "Home", path: "home" },
     { id: 2, title: "Portfolio", path: "portfolio" },
-    { id: 3, title: "About Me", path: "about" },
+    { id: 3, title: "About Me", path: "about-me" },
   ];
 
   const [activeSection, setActiveSection] = useState("home");
@@ -41,7 +47,7 @@ const Navbar = (props: INavbarProps) => {
 
   return (
     <>
-      <nav className="flex items-center justify-between p-4 mx-10 rounded-xl shadow-lg sticky top-5 z-50 bg-white/20 backdrop-blur-lg border border-white/30">
+      <nav className="flex items-center justify-between p-4 rounded-xl shadow-lg sticky top-5 z-50 bg-white/20 backdrop-blur-lg border border-white/30">
         <h1 className="text-lg cursor-pointer">
           Earl.<span className="text-sm">Creatives</span>
         </h1>

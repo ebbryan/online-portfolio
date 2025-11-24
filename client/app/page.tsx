@@ -1,19 +1,13 @@
-import HeroComponent from "@/components/SiteLandingPage/Hero";
+import SiteHero from "@/components/SiteHero";
+import SiteAboutMe from "@/components/SiteAboutMe";
+import SitePortfolio from "@/components/SitePortfolio";
 
 export default function Home() {
   return (
     <>
-      <section id="home">
-        <HeroComponent color="bg-white" text="Home" />
-      </section>
-
-      <section id="portfolio">
-        <HeroComponent color="bg-black/20" text="Portfolio" />
-      </section>
-
-      <section id="about">
-        <HeroComponent color="bg-white" text="About Me" />
-      </section>
+      <SiteHero id="home" />
+      <SitePortfolio id="portfolio" />
+      <SiteAboutMe id="about-me" />
     </>
   );
 }
