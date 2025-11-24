@@ -47,7 +47,7 @@ const Navbar = (props: INavbarProps) => {
 
   return (
     <>
-      <nav className="flex items-center justify-between p-4 rounded-xl shadow-lg sticky top-5 z-50 bg-white/20 backdrop-blur-lg border border-white/30">
+      <nav className="flex items-center justify-between p-4 rounded-xl shadow-lg sticky top-5 z-50 bg-white/5 backdrop-blur-sm border border-white/30">
         <h1 className="text-lg cursor-pointer">
           Earl.<span className="text-sm">Creatives</span>
         </h1>

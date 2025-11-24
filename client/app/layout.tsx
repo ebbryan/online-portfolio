@@ -3,6 +3,7 @@ import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ContainerProvider from "@/components/Providers/container.provider";
 import Navbar from "@/components/Navbar";
+import Prism from "@/components/Prism";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",

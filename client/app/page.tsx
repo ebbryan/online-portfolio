@@ -1,13 +1,8 @@
-import SiteHero from "@/components/SiteHero";
-import SiteAboutMe from "@/components/SiteAboutMe";
-import SitePortfolio from "@/components/SitePortfolio";
+import GetMedia from "@/requests/media-files.request";
+import PageContent from "./page.content";
 
-export default function Home() {
-  return (
-    <>
-      <SiteHero id="home" />
-      <SitePortfolio id="portfolio" />
-      <SiteAboutMe id="about-me" />
-    </>
-  );
+export default async function Home() {
+  const mediaData = await GetMedia();
+
+  return <PageContent mediaData={mediaData.data} />;
 }
