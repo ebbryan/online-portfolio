@@ -19,15 +19,13 @@ interface ISitePortfolioProps {
 
 const SitePortfolio = (props: ISitePortfolioProps) => {
   return (
-    <section
-      id={props.id}
-      className={`h-screen flex flex-col items-center p-2 `}
-    >
+    <section id={props.id} className={`h-screen flex flex-col gap-3 p-6 py-24`}>
+      <h1 className="text-4xl text-left font-black">Portfolio</h1>
       <div className="flex flex-wrap gap-2">
         {props.mediaData?.map((data) => (
           <VideoPlayer
             key={data.id}
-            className="overflow-hidden rounded-lg border w-sm"
+            className="overflow-hidden rounded-lg border w-64"
           >
             <VideoPlayerContent
               crossOrigin=""

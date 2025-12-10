@@ -10,7 +10,7 @@ const SiteHero = (props: ISiteHeroProps) => {
   return (
     <section
       id={props.id}
-      className={`h-screen flex flex-col items-center py-70 gap-3`}
+      className={`h-screen flex flex-col items-center py-70 gap-3 bg-gray-200`}
     >
       <div className="flex flex-col items-center gap-5">
         <h1 className="flex flex-wrap text-center text-4xl font-black">
