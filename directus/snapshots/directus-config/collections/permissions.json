@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "collection": "directus_files",
+    "action": "read",
+    "permissions": null,
+    "validation": null,
+    "presets": null,
+    "fields": [
+      "id",
+      "title"
+    ],
+    "policy": "_sync_default_public_policy",
+    "_syncId": "73c05f0a-8b1e-4869-8fb4-b613c58923eb"
+  }
+]
